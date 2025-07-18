@@ -30,4 +30,8 @@ public class ClienteBanco {
     public void setSobrenome(String sobrenome) {
         this.sobrenome = sobrenome;
     }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }

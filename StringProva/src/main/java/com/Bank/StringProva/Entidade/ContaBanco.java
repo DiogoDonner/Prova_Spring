@@ -30,4 +30,8 @@ public class ContaBanco {
     public List<MovimentacaoBanco> getMovimentacoes() {
         return movimentacoes;
     }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
 }

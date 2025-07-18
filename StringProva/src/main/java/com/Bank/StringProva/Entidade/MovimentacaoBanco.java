@@ -2,11 +2,13 @@ package com.Bank.StringProva.Entidade;
 
 public class MovimentacaoBanco {
     private Integer id;
+    private int conta;
     private String tipo;
     private double valor;
 
-    public MovimentacaoBanco(Integer id, String tipo, double valor) {
+    public MovimentacaoBanco(Integer id, int conta, String tipo, double valor) {
         this.id = id;
+        this.conta = conta;
         this.tipo = tipo;
         this.valor = valor;
     }
