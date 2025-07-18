@@ -1,0 +1,438 @@
+{
+  "name": "Prova String - Bank",
+  "version": "1",
+  "items": [
+    {
+      "type": "folder",
+      "name": "Movimentações",
+      "filename": "Movimentações",
+      "seq": 1,
+      "root": {
+        "meta": {
+          "name": "Movimentações",
+          "seq": 1
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "Chamar Movimentações",
+          "filename": "Chamar Movimentações.bru",
+          "seq": 1,
+          "request": {
+            "url": "http://localhost:8080/movimentacao",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Clientes",
+      "filename": "Clientes",
+      "seq": 2,
+      "root": {
+        "meta": {
+          "name": "Clientes",
+          "seq": 2
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "Mostrar Clientes",
+          "filename": "Mostrar Clientes.bru",
+          "seq": 1,
+          "request": {
+            "url": "http://localhost:8080/clientes",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Adicionar Cliente",
+          "filename": "Adicionar Cliente.bru",
+          "seq": 2,
+          "request": {
+            "url": "http://localhost:8080/clientes/addcliente",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"nome\": \"João\",\n  \"sobrenome\": \"Silva\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Atualizar Cliente",
+          "filename": "Atualizar Cliente.bru",
+          "seq": 3,
+          "request": {
+            "url": "http://localhost:8080/clientes/atualizarcliente/1",
+            "method": "PUT",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"nome\": \"João\",\n  \"sobrenome\": \"Silva\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Contas",
+      "filename": "Contas",
+      "seq": 3,
+      "root": {
+        "meta": {
+          "name": "Contas",
+          "seq": 3
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "Buscar Contas",
+          "filename": "Buscar Contas.bru",
+          "seq": 2,
+          "request": {
+            "url": "http://localhost:8080/contas",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Buscar Saldo",
+          "filename": "Buscar Saldo.bru",
+          "seq": 3,
+          "request": {
+            "url": "http://localhost:8080/contas/1/saldo",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Buscar Movimentações",
+          "filename": "Buscar Movimentações.bru",
+          "seq": 4,
+          "request": {
+            "url": "http://localhost:8080/contas/1/movimentacoes",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Buscar Movimentação",
+          "filename": "Buscar Movimentação.bru",
+          "seq": 5,
+          "request": {
+            "url": "http://localhost:8080/contas/1/movimentacoes/2/detalhes",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Adicionar Cliente",
+          "filename": "Adicionar Cliente.bru",
+          "seq": 7,
+          "request": {
+            "url": "http://localhost:8080/contas/addcliente",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"nome\": \"João\",\n  \"sobrenome\": \"Silva\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "AtualizarCliente",
+          "filename": "AtualizarCliente.bru",
+          "seq": 6,
+          "request": {
+            "url": "http://localhost:8080/contas/atualizarcliente/1",
+            "method": "PUT",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"nome\": \"João\",\n  \"sobrenome\": \"Silva\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Criar Conta",
+          "filename": "Criar Conta.bru",
+          "seq": 8,
+          "request": {
+            "url": "http://localhost:8080/contas/addconta",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"id\": 4,\n  \"cliente\": {\n    \"id\": 1,\n    \"nome\": \"Fulano\",\n    \"sobrenome\": \"da Silva\"\n  },\n  \"saldo\": 10.0,\n  \"movimentacoes\": []\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Depositar Conta",
+          "filename": "Depositar Conta.bru",
+          "seq": 9,
+          "request": {
+            "url": "http://localhost:8080/contas/depositar/1",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"valor\": 300.0\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Sacar conta",
+          "filename": "Sacar conta.bru",
+          "seq": 10,
+          "request": {
+            "url": "http://localhost:8080/contas/sacar/1",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"valor\": 100.0\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "BuscarCliente",
+          "filename": "BuscarCliente.bru",
+          "seq": 1,
+          "request": {
+            "url": "http://localhost:8080/contas/clientes",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "environments": [],
+  "brunoConfig": {
+    "version": "1",
+    "name": "Prova String - Bank",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "size": 0.0002002716064453125,
+    "filesCount": 2
+  }
+}
