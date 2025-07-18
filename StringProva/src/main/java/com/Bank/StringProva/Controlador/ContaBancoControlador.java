@@ -55,6 +55,11 @@ public class ContaBancoControlador {
         return list;
     }
 
+    @GetMapping("/clientes")
+    public List<ClienteBanco> ListarClientes(){
+        return clientes;
+    }
+
     @GetMapping("/{id}/saldo")
     public Double getSaldo(@PathVariable int id) {
         for (ContaBanco conta : list) {
